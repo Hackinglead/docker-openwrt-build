@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  build_root:
+    container_name: wrt-build
+    image: sysalex/openwrt-build:1.0.0
+    tty: true
+    stdin_open: true
+    volumes:
+      - /srv/wrt:/data
