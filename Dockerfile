@@ -6,7 +6,7 @@ VOLUME ["/data"]
 
 RUN apt-get update &&\
     apt-get install -y \
-    git-core subversion build-essential gcc-multilib libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python libssl-dev dialog mc &&\
+    git-core subversion build-essential gcc-multilib libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python libssl-dev dialog mc libxml-parser-perl &&\
     apt-get clean && \
     useradd -m openwrt  && \
     chown -R openwrt:openwrt /home/openwrt && \
